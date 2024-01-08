@@ -238,10 +238,168 @@ body{
     flex-grow: 1;  
 }
 
+.main__content{
+    display: flex;
+    justify-content: center;       
+    min-height: 480px;
+    background-color: #ebebeb; 
+    
+    border-bottom-left-radius: 40px 40px;
+    border-bottom-right-radius: 40px 40px; 
+    background: url(../img/tractor-fon.jpg) center center no-repeat transparent;
+    background-size: cover;   
+}
+
+._conteiner{
+    max-width: 1700px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.main__content-wrapper{    
+    padding-top: 30px;
+    max-width: 700px;
+}
+
+.main__content-block{
+    width: auto;
+}
+
+.content-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: .15px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 1.33;
+    font-weight: 600;
+}
+
+.content-example{
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: 400;    
+}
+
+.content-title{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.content-title-item{
+    width: 300px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.content-application{    
+    margin-top: 32px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.content-application-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-application-item-text{
+    font-size: 14px;    
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: .4px;
+    color: #000;
+}
+
+.content-application-item-face{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.content-faces{
+    position: relative;
+    margin: 0;
+}
+
+.label-face{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.label-face::before{
+    width: 24px;
+    height: 24px;
+    content: '';
+    display: block;
+    box-shadow: 0 0 0 1px #000000;
+    border-radius: 50%;
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    flex-shrink: 0;
+    background-color: #ffffff;
+}
+
+.content-application-item-contant{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 300px;
+}
+
+.content-application-item-obrabotka{
+    text-align: inherit;
+    align-self: flex-end;  
+}
+
+.content-application-item-button{    
+    display: flex;
+    position: relative;
+    border-radius: 8px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 0 20px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ff00ea;
+}
+
+
+
 
 
 /* FOOTER */
 .footer{    
+    margin-top: 100px;
     height: 90px;    
     background-color: #b100a2;    
 }
