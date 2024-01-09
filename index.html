@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Автосалон сельскохозяйственной техники «MAYBE»</title>
+    <link rel="icon" type="image/png" href="./img/mini-logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
@@ -16,18 +17,20 @@
             <a href="#" class="header__logo-main"><img src="./img/logo-main.png" alt="" class="img-logo"></a>
             <nav class="header__menu">
                 <ul class="header__menu-list">
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Модельный ряд</a></li>
+                    <li class="header__menu-item"><a href="#models" class="header__menu-link">Модельный ряд</a></li>
                     <li class="header__menu-item"><a href="#" class="header__menu-link">О нас</a></li>
                     <li class="header__menu-item"><a href="#" class="header__menu-link">Автоуслуги и сервисы</a></li>
                 </ul>
             </nav>
             <div class="header__call">
-                <div class="header__telefon"><a href="tel:+" class="call-font-size">"+7 999"
+                <div class="header__telefon"><a href="tel:+" class="call-font-size">+7 "999"
                         <span>999 99
                             99</span></a> <span class="free-call">Бесплатный звонок по России</span>
                 </div>
-                <div class="header__call-free"><button type="button" class="btn__main-call">Заказать звонок</button>
+                <div class="header__call-free"><button type="button" class="btn__main-call">Заказать
+                        звонок</button>
                 </div>
+                <div class="call-button"></div>
             </div>
         </div>
     </header>
@@ -66,23 +69,32 @@
                         <div class="content-application-item">
                             <div class="content-application-item-text">С кем будет заключён договор</div>
                             <div class="content-application-item-face">
-                                <div class="content-faces"><label for="1" class="label-face">Юридическое лицо</label>
+                                <div class="content-faces"><input class="input-faces" type="radio" name="value"
+                                        value="option1"><label for="1" class="label-face">Юридическое лицо</label>
                                 </div>
-                                <div class="content-faces"><label for="2" class="label-face">ИП</label></div>
-                                <div class="content-faces"><label for="3" class="label-face">Физическое лицо</label>
+                                <div class="content-faces"><input class="input-faces" type="radio" name="value"
+                                        value="option2"><label for="2" class="label-face">ИП</label></div>
+                                <div class="content-faces"><input class="input-faces" type="radio" name="value"
+                                        value="option3"><label for="3" class="label-face">Физическое лицо</label>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <div class="data__block">
+                                <input type="text" class="name" placeholder="Имя">
+                                <input type="text" class="telepon" placeholder="Телефон">
                             </div>
                         </div>
                         <div class="content-application-item-contant">
                             <div class="content-application-item-obrabotka">
-                                <p class="bottom" style="font-size: 12px;">Все поля обязательны для заполнения. <br></p>
-                                <p class="bottom" style="font-size: 12px;">Оставляя заявку, вы соглашаетесь <a href=""
+                                <p class="bottom">Все поля обязательны для заполнения. <br></p>
+                                <p class="bottom">Оставляя заявку, вы соглашаетесь <a href=""
                                         style="text-decoration: underline;">обработку персональных
                                         данных.</a>
                                 </p>
                             </div>
                             <div class="content-application-item-zaivka">
-                                <div class="content-application-item-button">Оставить заявку</div>
+                                <a href="#" class="content-application-item-button">Оставить заявку</a>
                             </div>
                         </div>
                     </div>
@@ -90,13 +102,215 @@
             </div>
         </div>
     </div>
-
+    <div class="main">
+        <section class="models" id="models">
+            <div class="_conteiner models__container">
+                <h2 class="section-heading models__heading">Модельный ряд МТЗ</h2>
+                <p class="section-description models__description">Посмотрите предложения от официальных дилеров по всей
+                    России</p>
+                <ul class="models__list">
+                    <li class="models__item">
+                        <div class="models__card m-card">
+                            <div class="m-card__logo">
+                                <img src="./img/model-cart-logo.webp" alt="logo" class="m-card__logo-img">
+                                <span class="m-card__logo-text">МТЗ</span>
+                            </div>
+                            <div class="m-card__img-comtainer">
+                                <img src="./img/821.jpg" alt="img" class="m-card__img">
+                            </div>
+                            <strong class="m-card__name">Беларус 82.1</strong>
+                            <div class="m-card__details details">
+                                <div class="details__price">Цена по запросу <span class="details__tool-tip"></span>
+                                </div>
+                                <ul class="details__list">
+                                    <li class="details__item"><a href="" class="details__link gift-icon"></a></li>
+                                    <li class="details__item"><a href="" class="details__link">Лизинг до 7 лет</a></li>
+                                    <li class="details__item"><a href="" class="details__link">Аванс 0%</a></li>
+                                    <li class="details__item"><a href="" class="details__link">До 600 литров топлива</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn m-card__btn">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="models__item">
+                        <div class="models__card m-card">
+                            <div class="m-card__logo">
+                                <img src="./img/model-cart-logo.webp" alt="logo" class="m-card__logo-img">
+                                <span class="m-card__logo-text">МТЗ</span>
+                            </div>
+                            <div class="m-card__img-comtainer">
+                                <img src="./img/12213.jpg" alt="img" class="m-card__img">
+                            </div>
+                            <strong class="m-card__name">БЕЛАРУС 1221.3</strong>
+                            <div class="m-card__details details">
+                                <div class="details__price">Цена по запросу <span class="details__tool-tip"></span>
+                                </div>
+                                <ul class="details__list">
+                                    <li class="details__item"><a href="" class="details__link gift-icon"></a></li>
+                                    <li class="details__item"><a href="" class="details__link">Лизинг до 7 лет</a></li>
+                                    <li class="details__item"><a href="" class="details__link">Аванс 0%</a></li>
+                                    <li class="details__item"><a href="" class="details__link">До 600 литров топлива</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn m-card__btn">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="models__item">
+                        <div class="models__card m-card">
+                            <div class="m-card__logo">
+                                <img src="./img/model-cart-logo.webp" alt="logo" class="m-card__logo-img">
+                                <span class="m-card__logo-text">МТЗ</span>
+                            </div>
+                            <div class="m-card__img-comtainer">
+                                <img src="./img/801.jpg" alt="img" class="m-card__img">
+                            </div>
+                            <strong class="m-card__name">Беларус 80.1</strong>
+                            <div class="m-card__details details">
+                                <div class="details__price">Цена по запросу <span class="details__tool-tip"></span>
+                                </div>
+                                <ul class="details__list">
+                                    <li class="details__item"><a href="" class="details__link gift-icon"></a></li>
+                                    <li class="details__item"><a href="" class="details__link">Лизинг до 7 лет</a></li>
+                                    <li class="details__item"><a href="" class="details__link">Аванс 0%</a></li>
+                                    <li class="details__item"><a href="" class="details__link">До 600 литров топлива</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn m-card__btn">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="models__item">
+                        <div class="models__card m-card">
+                            <div class="m-card__logo">
+                                <img src="./img/model-cart-logo.webp" alt="logo" class="m-card__logo-img">
+                                <span class="m-card__logo-text">МТЗ</span>
+                            </div>
+                            <div class="m-card__img-comtainer">
+                                <img src="./img/9523.jpg" alt="img" class="m-card__img">
+                            </div>
+                            <strong class="m-card__name">Беларус 952.3</strong>
+                            <div class="m-card__details details">
+                                <div class="details__price">Цена по запросу <span class="details__tool-tip"></span>
+                                </div>
+                                <ul class="details__list">
+                                    <li class="details__item"><a href="" class="details__link gift-icon"></a></li>
+                                    <li class="details__item"><a href="" class="details__link">Лизинг до 7 лет</a></li>
+                                    <li class="details__item"><a href="" class="details__link">Аванс 0%</a></li>
+                                    <li class="details__item"><a href="" class="details__link">До 600 литров топлива</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn m-card__btn">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="models__item">
+                        <div class="models__card m-card">
+                            <div class="m-card__logo">
+                                <img src="./img/model-cart-logo.webp" alt="logo" class="m-card__logo-img">
+                                <span class="m-card__logo-text">МТЗ</span>
+                            </div>
+                            <div class="m-card__img-comtainer">
+                                <img src="./img/075.jpg" alt="img" class="m-card__img">
+                            </div>
+                            <strong class="m-card__name">ПФС-075 БКУ</strong>
+                            <div class="m-card__details details">
+                                <div class="details__price">Цена по запросу <span class="details__tool-tip"></span>
+                                </div>
+                                <ul class="details__list">
+                                    <li class="details__item"><a href="" class="details__link gift-icon"></a></li>
+                                    <li class="details__item"><a href="" class="details__link">Лизинг до 7 лет</a></li>
+                                    <li class="details__item"><a href="" class="details__link">Аванс 0%</a></li>
+                                    <li class="details__item"><a href="" class="details__link">До 600 литров топлива</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn m-card__btn">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="models__item">
+                        <div class="models__card m-card">
+                            <div class="m-card__logo">
+                                <img src="./img/model-cart-logo.webp" alt="logo" class="m-card__logo-img">
+                                <span class="m-card__logo-text">МТЗ</span>
+                            </div>
+                            <div class="m-card__img-comtainer">
+                                <img src="./img/82-01.jpg" alt="img" class="m-card__img">
+                            </div>
+                            <strong class="m-card__name">Беларус 82МК-01</strong>
+                            <div class="m-card__details details">
+                                <div class="details__price">Цена по запросу <span class="details__tool-tip"></span>
+                                </div>
+                                <ul class="details__list">
+                                    <li class="details__item"><a href="" class="details__link gift-icon"></a></li>
+                                    <li class="details__item"><a href="" class="details__link">Лизинг до 7 лет</a></li>
+                                    <li class="details__item"><a href="" class="details__link">Аванс 0%</a></li>
+                                    <li class="details__item"><a href="" class="details__link">До 600 литров топлива</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn m-card__btn">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="models__item">
+                        <div class="models__card m-card">
+                            <div class="m-card__logo">
+                                <img src="./img/model-cart-logo.webp" alt="logo" class="m-card__logo-img">
+                                <span class="m-card__logo-text">МТЗ</span>
+                            </div>
+                            <div class="m-card__img-comtainer">
+                                <img src="./img/ydkm.jpg" alt="img" class="m-card__img">
+                            </div>
+                            <strong class="m-card__name">УДКМ</strong>
+                            <div class="m-card__details details">
+                                <div class="details__price">Цена по запросу <span class="details__tool-tip"></span>
+                                </div>
+                                <ul class="details__list">
+                                    <li class="details__item"><a href="" class="details__link gift-icon"></a></li>
+                                    <li class="details__item"><a href="" class="details__link">Лизинг до 7 лет</a></li>
+                                    <li class="details__item"><a href="" class="details__link">Аванс 0%</a></li>
+                                    <li class="details__item"><a href="" class="details__link">До 600 литров топлива</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn m-card__btn">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="models__item">
+                        <div class="models__card m-card">
+                            <div class="m-card__logo">
+                                <img src="./img/model-cart-logo.webp" alt="logo" class="m-card__logo-img">
+                                <span class="m-card__logo-text">МТЗ</span>
+                            </div>
+                            <div class="m-card__img-comtainer">
+                                <img src="./img/10253.jpg" alt="img" class="m-card__img">
+                            </div>
+                            <strong class="m-card__name">Беларус 1025.3</strong>
+                            <div class="m-card__details details">
+                                <div class="details__price">Цена по запросу <span class="details__tool-tip"></span>
+                                </div>
+                                <ul class="details__list">
+                                    <li class="details__item"><a href="" class="details__link gift-icon"></a></li>
+                                    <li class="details__item"><a href="" class="details__link">Лизинг до 7 лет</a></li>
+                                    <li class="details__item"><a href="" class="details__link">Аванс 0%</a></li>
+                                    <li class="details__item"><a href="" class="details__link">До 600 литров топлива</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn m-card__btn">Оставить заявку</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
     <footer class="footer">
         <div class="footer__conteiner conteiner">
             <a href="#" class="footer__logo"><img src="./img/logo-main.png" alt=""></a>
             <nav class="footer__nav">
                 <ul class="footer__nav-list">
-                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Модельный ряд</a></li>
+                    <li class="footer__nav-item"><a href="#models" class="footer__nav-link">Модельный ряд</a></li>
                     <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
                     <li class="footer__nav-item"><a href="#" class="footer__nav-link">Автоуслуги и сервисы</a></li>
                 </ul>
