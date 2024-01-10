@@ -458,17 +458,19 @@ input{
     font-size: 1.5rem;
     line-height: 1.2;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 .models__heading {
-    margin-bottom: 1rem;
+   
 }
 .section-description {
     font-size: 1.2rem;
     line-height: 1.5;
     font-weight: 400;
+    margin-bottom: 2rem;
 }
 .models__description {
-    margin-bottom: 2rem;
+    
 }
 .models__list {
     display: flex;
@@ -510,6 +512,7 @@ input{
     height: 170px;
     border-radius: 10px;
     overflow: hidden;
+    text-align: center;
 }
 .m-card__img {
     max-width: 100%;
@@ -592,7 +595,67 @@ input{
     background-color: #fff;
 }
 
+/* ---------------------- SLIDER SERVICES -------------------- */
 
+.services__container{
+    padding-top: 50px;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.cards-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.cards-list::-webkit-scrollbar{
+    display: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 274px;
+    padding: 24px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.card__img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+.card__heading {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.card__test {
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.card__link {
+    color: #005b95;
+    font-weight: 14;
+    line-height: 1;
+}
 
 /* ABOUT-US */
 .__container{
