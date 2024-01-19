@@ -5,6 +5,7 @@ function addListeners() {
     const btnClose = document.querySelector('.modal__close');
 
     btn.addEventListener('click', () => {
+        window.scrollTo(0, 0);
         modalWindow.classList.toggle('active');
         clickClose.classList.toggle('active');
         document.body.classList.add('no-scrol');
