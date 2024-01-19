@@ -214,13 +214,6 @@ body{
     color: #000;
 }
 
-.free-call{    
-    font-size: 10px;
-    line-height: 130%;
-    letter-spacing: .4px;
-    color: #000;
-    margin: 0;    
-}
 
 .call-font-size{
     font-weight: 600;
@@ -243,6 +236,66 @@ body{
     cursor: pointer;
     background-color: #ff00ea;
     color: #000000;
+} 
+.modal {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    max-width: 450px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 38%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+  
+.modal .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.modal input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em;
+} 
+
+.call-back{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 400;
+    margin: 0.4rem 0 0.2rem;
+}
+  
+.btn-close {
+    transform: translate(10px, -20px);
+    margin-left: 270px;
+    margin-bottom: 60px;
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;    
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+  
+.hidden {
+    display: none;
 }
 
 
@@ -932,5 +985,13 @@ input{
 @media(max-width: 420px){
     .about-us__font-size{
         font-size: 18px;        
+    } 
+}
+@media(max-width: 1439px){
+    .modal{
+        display: none;       
+    } 
+    .overlay{
+        display: none;       
     } 
 }
