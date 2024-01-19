@@ -36,9 +36,27 @@
                         звонок</button></div>
             </div>
             <div class="call-button"></div>
-        </div>
-        </div>
+            </div>
     </header>
+
+    <div id="call-back" class="modal-window">
+        <div class="modal__container">
+            <div class="modal__content">
+                <button class="modal__close"></button>
+                <div class="modal__img-container"><img src="./img/phone2.png" alt="img" class="modal__img"></div>
+                <strong class="modal__heading">получить консультацию</strong>
+                <p class="modal__description">оставьте свой номер телефона и мы свжемся с вами в течение 5 минут (с 10:00 до 19:00)</p>
+                <form action="#" class="modal__form form">
+                    <input type="text" class="form__name" placeholder="Ваше имя">
+                    <input type="text" class="form__number" placeholder="Номер телефона">
+                    <button type="submit" class="form__btn btn">Отправить</button>
+                </form>
+                <p class="modal__description">Нажимая «отправить», даете свое соглашение на обработку персональных данных</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="click-close"></div>
 
     <div class="main">
         <div class="main__content _conteiner">
@@ -387,7 +405,7 @@
         </div>
     </footer>
     <script src="./js/script.js"></script>
-    <script src="./js/call.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
